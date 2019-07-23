@@ -17,6 +17,9 @@
 .container {
   display:grid;
   /* Style the template for the grid */
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(8,2fr);
+
 }
 
 /* Making border black */
@@ -25,11 +28,28 @@
 }
 
 #title {
-  grid-column: span 12;
+  background-color: orange;
+  grid-column: span 18;
 }
-
+#date{
+  grid-column: span 4;
+}
 .photo {
-  grid-column: /*insert format*/;
+  grid-column: span 6;
+  grid-row: span 4;
 }
+.border-side{
+  text-align: center;
+  grid-row: span 8;
+}
+.border-top{
+  grid-column: span 18;
+}
+.border-bottom{
+  grid-column: span 18;
 
+}
+.caption{
+  grid-column: span 14;
+}
 /* Style remaining grid elements */
