@@ -47,7 +47,7 @@ html {
 /* Parent or Container elements */
 /* Style them all at once with this selector */
 .row {
-display: flex;
+display: Flex;
 }
 
 /* OR Style each row individually with these selectors */
