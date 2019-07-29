@@ -44,7 +44,7 @@ print("My name is  "+ name + " and I'm "+ str(age) + " years old.")
 print("My name is %s and I'm %s years old." % (name ,age))
 '''
 ################ Functions ###############
-'''
+
 def greetAgent():
     print("Bond. James Bond.")
 
@@ -56,15 +56,16 @@ def createAgentGreeting(first_name, last_name):
 
 greetAgent('James', 'Bond') # This is calling the function
 greetAgent('Alexis','Mejia') # Prints the name of the input desired
-'''
-################ Exercise ################
 
+################ Exercise ################
+'''
 def findSum(x):
     y = 0
     for i in range(x):
        y = y + i
 
     return y + x
-    #return y 
+    #return y
 
 print(findSum(10))
+'''
