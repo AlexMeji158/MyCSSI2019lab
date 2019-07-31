@@ -51,9 +51,29 @@ else:
     print("Hero not found.")
 '''
 ############### Slicing ######################
-
+'''
 names = ["Rickon","Bran","Arya","Sansa","Jon","Robb"]
 print (names[::-1]) # prints the list in reverse
 print (names[4:2:-1]) # Only prints idx 4 and reverse idx 2, prints in reverse
 print (names[:2]) # prints only the first 2 idx
 print (names[::2]) # Skips every other
+'''
+####################### Lab ###############################
+states = {
+    "NY":"New York",
+    "CA":"California",
+    "TX":"Texas",
+    "CO":"Colorado",
+    "FL":"Florida",
+    "AZ":"Arizona"
+    }
+userInput = str(raw_input("Write the abbreviation of the state you want. "))
+'''
+for abbreviation in states:
+    if userInput in states:
+        print(userInput + " is short for " + states[abbreviation])
+    else:
+        print("Not in the system.")
+'''
+if userInput == abbreviation in states:
+    print(userInput + " is short for " + states[abbreviation])
